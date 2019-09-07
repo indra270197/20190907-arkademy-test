@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validasi</title>
+    </head>
+    <body>
+        <script>
+            function is_username_valid(username) {
+                var Regex_Username = /^[a-z]{5,9}$/ ;
+                return Regex_Username.test(username) ;
+            }
+            
+            if (is_username_valid("siska")) {
+                alert("Username Is Valid") ;
+            } else {
+                alert("Username Is Invalid") ;
+            }
+
+            function is_password_valid(password) {
+                var Regex_Password = /^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]{8,}$/i ;
+                return Regex_Password.test(password) ;
+            }
+
+            if (is_password_valid("codeYourFuture!123")) {
+                alert("Password Is Valid") ;
+            } else {
+                alert("Password Is Invalid") ;
+            }
+
+        </script>
+    </body>
+</html>

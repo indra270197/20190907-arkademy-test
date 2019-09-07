@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biodata</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script> 
+            var person = [ 
+                {
+                    name: "Indra",
+                    age: 22,
+                    address: "Jl. Kalimas Stan 10/05, Candiretno, Secang, Magelang, Jawa Tengah",
+                    hobbies:[
+                        "swimming", "hiking", "gaming"
+                        ],
+                    is_married: false,
+                    list_school:[
+                        {
+                            name: "Institut Teknologi Sepuluh Nopember",
+                            year_in: 2015,
+                            year_out: 2019,
+                            major: "Information Systems"
+                        },
+                        {
+                            name: "SMA 1 Magelang",
+                            year_in: 2012,
+                            year_out: 2015,
+                            major: null
+                        },
+                        {
+                            name: "SMP 1 Magelang",
+                            year_in: 2009,
+                            year_out: 2012,
+                            major: null
+                        },
+                        {
+                            name: "SD Kedungsari 4",
+                            year_in: 2003,
+                            year_out: 2009,
+                            major: null
+                        }
+                    ],
+                    skill: [
+                        {
+                            skill_name : "Javascript",
+                            level : "beginner"
+                        },
+                        {
+                            skill_name : "C++",
+                            level : "beginner"
+                        },
+                        {
+                            skill_name : "Java",
+                            level : "beginner"
+                        },
+                        {
+                            skill_name : "SAP",
+                            level : "beginner"
+                        }
+                    ],
+                    interested_in_coding : true
+                }
+            ]
+            var myJSON = JSON.stringify(person);
+            document.getElementById("demo").innerHTML = myJSON;
+          </script>
+    </body>
+</html>
